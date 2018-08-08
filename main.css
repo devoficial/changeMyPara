@@ -1,0 +1,77 @@
+/* Define variables for root element */
+:root{
+    --main-bg-color:#f8f8f8;
+    --main-text-color:#333;
+    --box-width : 90%;
+    --header-bg-color:#333;
+    --header-text-color:#fff;
+    --size:20px;
+    --weight:200;
+    --decor:none;
+    --style:normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+.container{
+    width: var(--box-width);
+    margin: 20px auto;
+}
+
+header#main-header{
+    background:var(--header-bg-color);
+    color: var(--header-text-color);
+    padding: 1.5rem;
+}
+header#main-header h1{
+    padding: 0;
+    margin: 0;
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.child{
+    flex: 1;
+}
+
+/* Defien box vars */
+.box{
+    --smbox-bg-color:#ddd;
+    --smbox-main-color:rgb(188, 142, 231);
+    --smbox-padding:5px 10px;
+    --box-shadow:10px 4px 4px var(--smbox-main-color);
+}
+
+.box{
+    background-color: var(--smbox-bg-color);
+    padding: var(--smbox-padding);
+    border: 1px solid var(--smbox-main-color);
+    box-shadow:
+     var(--box-shadow);
+}
+.box h1{
+    color: var(--smbox-main-color);
+}
+
+.box p{
+    color: var(--smbox-main-color);
+    font-size: var(--size);
+  font-weight: var(--weight);
+  text-decoration: var(--decor);
+  font-style:var(--style);
+
+}
+
+label {
+    font-size: 2rem;
+}
+
